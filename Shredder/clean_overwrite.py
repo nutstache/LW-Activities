@@ -64,4 +64,4 @@ print(subprocess.getoutput("df "+mount_dir)+"\n")
 print("Do you want to remove new files?(y/n)")
 ch=input()
 if ch=='y':
-	subprocess.getoutput("rm -rf "+sdb1/*")
+	subprocess.getoutput("rm -rf "+mount_dir+"/*")
