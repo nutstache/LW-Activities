@@ -1,13 +1,12 @@
 import subprocess
 
 #Storing Mounting and Partition location
-print("Enter mount location (Ex /mount_loc/sd1) : ")
+print("Enter mount location (Ex /mount_loc/sdb1) : ")
 mount_dir=input()
-print("Enter partition (Ex /dev/sd1) : ")
+print("Enter partition (Ex /dev/sdb1) : ")
 partition_dir=input()
 
 #Unmount drive
-subprocess.getoutput("rm -rf "+mount_dir+"/*")
 subprocess.getoutput("umount "+mount_dir)
 
 
